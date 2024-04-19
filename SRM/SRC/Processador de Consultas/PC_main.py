@@ -46,50 +46,38 @@ def write_to_csv(data, filename, header):
             writer.writerow(row)
 
 def main():
-    # Configuring the logger
     logging.basicConfig(filename='processing.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
     
-    # Start of the process
     logging.info(f"Starting {__file__}")
     logging.info("Starting the query processing")
 
-    # Start reading the configuration file
     logging.info("Reading the configuration file")
     start_time = time.time()
 
     xml_filename, consultas_filename, resultados_filename = parse_configuration_file('SRM/SRC/Processador de Consultas/PC.cfg')
     
-    # End reading the configuration file
     logging.info("Finished reading the configuration file")
 
-    # Start reading the XML file
     logging.info("Reading the XML file")
     tree = ET.parse(xml_filename)
     root = tree.getroot()
 
-    # End reading the XML file
     logging.info("Finished reading the XML file")
 
-    # Start processing queries
     logging.info("Processing queries")
     consultas, resultados_esperados = process_queries(root)
 
-    # End processing queries
     logging.info("Finished processing queries")
 
-    # Write queries to CSV
     logging.info("Writing queries to CSV")
     write_to_csv(consultas, consultas_filename, ['QueryNumber', 'QueryText'])
 
-    # Write expected results to CSV
     logging.info("Writing expected results to CSV")
     write_to_csv(resultados_esperados, resultados_filename, ['QueryNumber', 'DocNumber', 'DocVotes'])
 
-    # End of the process
     end_time = time.time()
     total_time = end_time - start_time
 
-    # Logging statistics
     logging.info(f"Total number of queries processed: {len(consultas)}")
     logging.info(f"Total processing time: {total_time:.2f} seconds")
     logging.info(f"Average processing time per query: {total_time / len(consultas):.4f} seconds")
