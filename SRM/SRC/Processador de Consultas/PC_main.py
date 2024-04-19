@@ -46,7 +46,7 @@ def write_to_csv(data, filename, header):
             writer.writerow(row)
 
 def main():
-    logging.basicConfig(filename='processing.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+    logging.basicConfig(filename='SRM/processing.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
     
     logging.info(f"Starting {__file__}")
     logging.info("Starting the query processing")

@@ -5,7 +5,7 @@ import math
 import logging
 import time
 
-logging.basicConfig(filename='processing.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='SRM/processing.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 INDEX_FILE_PATH = 'SRM\SRC\Indexador\INDEX.cfg'
 logging.info(f"Starting {__file__}")
 

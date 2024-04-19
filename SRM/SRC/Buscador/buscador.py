@@ -85,7 +85,7 @@ def process_queries(model_path, queries_path, results_path, min_length=2):
 
 def main():
 
-    logging.basicConfig(filename='processing.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+    logging.basicConfig(filename='SRM/processing.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
     logging.info(f"Starting {__file__}")
 
     model_path, queries_path, results_path = read_configuration('SRM/SRC/Buscador/BUSCA.cfg')

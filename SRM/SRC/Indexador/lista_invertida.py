@@ -47,7 +47,7 @@ def calcular_tempo_medio(total_time, total_items):
         return 0
 
 def main():
-    logging.basicConfig(filename='processing.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+    logging.basicConfig(filename='SRM/processing.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
     logging.info(f"Starting {__file__}")
     logging.info("Starting the inverted index creation process")
     start_time = time.time()
