@@ -1,0 +1,47 @@
+2024-04-19 00:44:57,091 - INFO - Starting SRM\SRC\Processador de Consultas\PC_main.py
+2024-04-19 00:44:57,091 - INFO - Starting the query processing
+2024-04-19 00:44:57,092 - INFO - Reading the configuration file
+2024-04-19 00:44:57,095 - INFO - Finished reading the configuration file
+2024-04-19 00:44:57,095 - INFO - Reading the XML file
+2024-04-19 00:44:57,109 - INFO - Finished reading the XML file
+2024-04-19 00:44:57,109 - INFO - Processing queries
+2024-04-19 00:44:57,121 - INFO - Finished processing queries
+2024-04-19 00:44:57,121 - INFO - Writing queries to CSV
+2024-04-19 00:44:57,122 - INFO - Writing expected results to CSV
+2024-04-19 00:44:57,125 - INFO - Total number of queries processed: 99
+2024-04-19 00:44:57,125 - INFO - Total processing time: 0.03 seconds
+2024-04-19 00:44:57,126 - INFO - Average processing time per query: 0.0003 seconds
+2024-04-19 00:44:57,126 - INFO - Process completed
+2024-04-19 00:44:57,126 - INFO - End of SRM\SRC\Processador de Consultas\PC_main.py
+2024-04-19 00:45:07,132 - INFO - Starting SRM\SRC\Indexador\lista_invertida.py
+2024-04-19 00:45:07,132 - INFO - Starting the inverted index creation process
+2024-04-19 00:45:07,132 - INFO - Reading the configuration file
+2024-04-19 00:45:07,132 - INFO - Reading XML files
+2024-04-19 00:45:07,232 - INFO - Creating the inverted index
+2024-04-19 00:45:07,266 - INFO - Writing the inverted index to the output file
+2024-04-19 00:45:07,297 - INFO - Total number of documents read: 1215
+2024-04-19 00:45:07,297 - INFO - Total processing time: 0.16 seconds
+2024-04-19 00:45:07,297 - INFO - Average time per document: 0.0001 seconds
+2024-04-19 00:45:07,297 - INFO - Process completed
+2024-04-19 00:45:07,297 - INFO - End of SRM\SRC\Indexador\lista_invertida.py
+2024-04-19 00:45:16,696 - INFO - Starting SRM\SRC\Indexador\modelo.py
+2024-04-19 00:45:16,696 - INFO - Starting the indexing process
+2024-04-19 00:45:16,696 - INFO - Reading configuration file
+2024-04-19 00:45:16,696 - INFO - Reading data file
+2024-04-19 00:45:16,999 - INFO - Starting data processing
+2024-04-19 00:45:18,473 - INFO - Data processing completed
+2024-04-19 00:45:18,473 - INFO - Total number of documents read: 11053
+2024-04-19 00:45:18,473 - INFO - Total number of lines written: 98106
+2024-04-19 00:45:18,474 - INFO - Total processing time: 1.78 seconds
+2024-04-19 00:45:18,474 - INFO - Average time per document: 0.0002 seconds
+2024-04-19 00:45:18,474 - INFO - Average time per word: 0.0002 seconds
+2024-04-19 00:45:18,474 - INFO - Average time per written line: 0.0000 seconds
+2024-04-19 00:45:18,474 - INFO - End of process
+2024-04-19 00:45:18,474 - INFO - End of SRM\SRC\Indexador\modelo.py
+2024-04-19 00:45:21,976 - INFO - Starting SRM\SRC\Buscador\buscador.py
+2024-04-19 00:45:21,980 - INFO - Starting query processing
+2024-04-19 00:45:22,345 - INFO - Finished query processing
+2024-04-19 00:45:22,345 - INFO - Total number of result lines written: 117983
+2024-04-19 00:45:22,345 - INFO - Total processing time: 0.37 seconds
+2024-04-19 00:45:22,345 - INFO - Average processing time per query: 0.0037 seconds
+2024-04-19 00:45:22,347 - INFO - End of SRM\SRC\Buscador\buscador.py

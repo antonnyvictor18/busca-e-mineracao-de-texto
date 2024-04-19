@@ -1,0 +1,8 @@
+Assim como sugerido em aula, o arquivo "modelo.csv" contém uma matriz termo-documento em que cada célula corresponde à 
+estatística tf-idf do par (palavra, número do documento). O formato de representação adotado é
+"palavra; número do documento; peso". Quaisquer pares (palavra, número do documento) ausentes
+em "modelo.csv" têm um peso tf-idf igual a zero.
+
+Além disso, no arquivo index.cfg, é possível selecionar a opção "absoluta" ou "relativa" para a configuração
+de FREQUÊNCIA. "Absoluta" conta simplesmente o número de vezes que o termo aparece no documento,
+enquanto "relativa" normaliza esse valor pela quantidade total de termos no documento.
