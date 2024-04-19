@@ -64,7 +64,7 @@ def process_queries(model_path, queries_path, results_path, min_length=2):
                             query_dict[key] += current_dict[key] * query_vec[word]
             
             query_num += 1
-            sorted_values = sorted(query_dict.items(), key=lambda item: item[1], reverse=True)#[:100]
+            sorted_values = sorted(query_dict.items(), key=lambda item: item[1], reverse=True)
             
             with open(results_path, "a", newline='') as result_file:
                 result_writer = csv.writer(result_file, delimiter=";")
